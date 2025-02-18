@@ -32,8 +32,6 @@ const OtpModal = ({ email, accountId }: { email: string, accountId: string }) =>
     e.preventDefault();
     setIsLoading(true);
 
-    console.log({ accountId, password });
-
     try {
       const sessionId = await verifySecret({ accountId, password });
 
